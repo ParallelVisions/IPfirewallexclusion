@@ -16,25 +16,6 @@ def get_all_rows(data_file, ws):
     return all_rows
 
 
-'''
-def get_all_columns(data_file, ws):
-   
-    """Get all columns"""
-    
-    xcell = load_workbook(data_file)
-    ws = xcell['IPv4']
-
-    column_a = []
-    column_b = []
-    column_c = []
-
-    for row in range(2, ws.max_row+1):
-        column_a.append(ws.cell(row=row, column=1).value)
-        column_b.append(ws.cell(row=row, column=2).value)
-        column_c.append(ws.cell(row=row, column=3).value)
-        return column_a, column_b, column_c
-'''
-
 
 def summarize_data(data):
     """Summary of addresses, subnet, unicode, and country"""
